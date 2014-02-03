@@ -1,0 +1,38 @@
+﻿body {
+    background-color: ivory;
+    font-family: 'Comic Sans MS';
+    font-size: 25px;
+    color: peru;
+}
+
+h1 {
+    font-family: 'Times New Roman', Georgia, serif;
+    font-size: 14px;
+}
+
+h1.purple {
+    color: purple;
+}
+
+h1.green {
+    color: green;
+}
+
+.purpleserif {
+    font-family: 'Times New Roman', Georgia, serif;
+    color: purple;
+}
+
+h1.login{
+    font-family: 'Times New Roman';
+    vertical-align: central;
+    text-align: center;
+    color: flavor;  
+}
+
+h1.centerHeadline{
+    vertical-align: central;
+    text-align: center;
+    font-size: 50px;
+    color: navy;
+}

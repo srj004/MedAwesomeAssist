@@ -1,0 +1,171 @@
+﻿<! DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1" />
+        <style type="text/css">
+            h1 {color:red}
+        </style>
+
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+
+        <meta name"decription" content="Welcome to Matts Website"/>
+        <meta name="keywords" content="Awesome" />
+        <meta name="author" content="Matt Schwegler"/>
+
+        <title>Welcome to My Website</title>
+    </head>
+
+    <body>
+        <h1>H1</h1>
+        <h2>H1</h2>
+        <h3>H1</h3>
+        <h4>H1</h4>
+        <h5>H1</h5>
+        <h6>H1</h6>
+
+
+        <!--BELOW ARE TEXT FORMATS FOR HTML-->
+        <abbr title="As Soon as possible">ASAP</abbr><br />
+        <acronym title="As Soon as possible">ASAP</acronym><br />
+
+        <b>BOLD</b><br />
+        <big>Big</big><br />
+
+        <blockquote>Indent this text and style </blockquote><br />
+
+        <center>Center the text</center>
+
+        <em>Italics the Text</em><br />
+        <i>Also italics the text</i><br />
+
+        <p>I Create paragraphs</p><br />
+
+        <q>Creates a quote</q><br />
+
+        <s>Strikes through text</s><br />
+
+        <small>Creates small text</small><br />
+
+        <strong>Strong looking text</strong><br />
+
+        <sub>subscript</sub><br />
+
+        <sup>superscript</sup><br />
+
+        <!-- BELOW ARE IMAGE FORMATS FOR HTML-->
+        <img src="http://www.newthinktank.com/wp-content/uploads/2010/03/marketing-examples45_sm_sm.jpg" alt="Merrill Lynch Ad" height="415" width="300" />
+
+        <!-- LIST TYPES BELOW -->
+        <!-- Definition List-->
+        <dl>
+            <dt>Bicycle</dt>
+            <dd>Has 2 wheels</dd>
+        </dl>
+        <!-- ORDERED LISTS-->
+        <ol>
+            <li>Car</li>
+            <li>Truck</li>
+        </ol>
+        <!-- UNORDERED LISTS-->
+        <ul>
+            <li>Car</li>
+            <li>Truck</li>
+        </ul>
+
+        <!-- CREATING LINKS OR ANCHOR TAGS IN HTML-->
+
+        <!-- _blank causes to open in new window _self opens in same window-->
+        <a href="http://newthinktank.com" target="_blank">Awesome website</a>
+
+        <!-- TABLES -->
+        <table summary="Here is the table summary">
+            <caption>
+                TABLE OF THINGS I DID
+            </caption>
+
+            <!-- tr defines rows-->
+            <tr>
+                <!-- th defines columnes -->
+                <th>Sat</th>
+                <th>Sun</th>
+            </tr>
+            <!-- tr defines rows-->
+            <tr>
+                <!-- th defines columnes -->
+                <th>Road Bike</th>
+                <th>Run</th>
+            </tr>
+        </table>
+
+        <!--HOW TO CREATE FORMS IN HTML-->
+        <!--excepts into and sends it to a php script to proccess it post method doesnt show in url -->
+
+        <form action="http://www.newthinktank.com/mail2.php" method="post">
+
+            <!--Create small text area-->
+            <b>Send Message to this Email</b><br />
+            <input type="text" name="email" size=40><br />
+
+            <p>
+                <b>Subject</b><br />
+                <input type="text" name="subject" size=40>
+            </p><br />
+
+            <p>
+            <!-- Create larger text areas -->
+                <b>Text Area</b><br />
+                <textarea cols=40 rows=10 name="message">Default Text in Text Area Box</textarea>
+            </p><br />
+
+            <p>
+                <b>Text Input</b><br />
+                <input type="text" name="textinput" />
+            </p><br />
+
+            <p>
+
+            <!-- Enterted text that doesnt show on the screen -->
+                <b>Password Input</b><br />
+                <input type="password" name="password" />
+            </p><br />
+
+            <p>
+
+            <!-- Creates radio buttons -->
+                <b>Radio Input</b><br />
+                <input type="radio" name="radioinput" value="Love Radio Buttons" />Love Radio Buttons
+                <input type="radio" name="radioinput" value="Hate Radio Buttons" />Hate Radio Buttons
+            </p><br />
+
+            <p>
+                <b>Checkbox Input</b><br />
+                <input type="checkbox" name="checkboxinput" value="Love Checkboxs" />Love Checkboxs
+                <input type="checkbox" name="checkboxinput" value="Hate Checkboxs" />Hate Checkboxs
+            </p><br />
+
+            <p>
+                <b>Select Input</b><br />
+                <select name="selectinput">
+                    <option value="loveselect">I love select buttons</option>
+                    <option value="hateselect">I hate select buttons</option>
+                </select>
+            </p><br />
+
+            <p>
+                <b>Option Input</b><br />
+                <select name="optioninput">
+                    <option value="loveselect">I love option buttons</option>
+                    <option value="hateselect">I hate option buttons</option>
+                </select>
+            </p><br />
+
+            <p><input type="submit" value="Send"></p>
+
+            <input type="hidden" name="submitted" value="TRUE" />
+
+        </form>
+
+
+</body>
+</html>
