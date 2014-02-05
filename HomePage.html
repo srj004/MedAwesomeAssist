@@ -7,7 +7,7 @@
     <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
-
+    <!-- start of the hearder nav bar -->
     <div class="navbar navbar-inverse navbar-static-top">
         <div class="container">
 
@@ -23,7 +23,7 @@
 
                 <ul class="nav navbar-nav navbar-right">
 
-                    <li class="active"><a href="#">Home</a></li>
+                    <li class="active"><a href="HomePage.html">Home</a></li>
                     <li><a href="#">Speak with a Doctor</a></li>
                     <li class="dropdown">
 
@@ -36,8 +36,8 @@
                         </ul>
 
                     </li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="#contact" data-toggle="modal">Contact</a></li>
 
                 </ul>
 
@@ -45,6 +45,8 @@
 
         </div>
     </div>
+
+    <!-- Start of the jumbotron -->
     <center>
         <div class="container">
 
@@ -54,13 +56,16 @@
                     Welcome to your personal medical assistant designed to keep all your records and
                     important medical files and histories in one convient place
                 </p>
-                <a class="btn btn-default">Login</a>
-                <a class="btn btn-info">Register</a>
+                <a href="#login" class="btn btn-default " data-toggle="modal">Login</a>
+                <a href="#register" class="btn btn-info" data-toggle="modal">Register</a>
 
             </div>
 
         </div>
     </center>
+
+
+    <!-- This is the foot toobar-->
 
     <div class="navbar navbar-default navbar-fixed-bottom">
 
@@ -69,6 +74,135 @@
             <a href="http://youtube.com/codersguide" class="navbar-btn btn-danger btn pull-right">Alert Your Doctor</a>
         </div>
 
+    </div>
+
+    <!-- The response from clicking contact -->
+     <div class=" modal fade" id="contact" role="dialog">
+         <div class="modal-dialog">
+             <div class="modal-content">
+                 <div class="modal-header">
+                     <h4>Contact MedAssist</h4>
+                 </div>
+                 <div class="modal-body">
+                     <p> Tech Support: Sahil:</p><br />
+                     <p> Complaints: Bernardo:</p><br />
+                     <p> Compliments: Matt</p>
+                 </div>
+                 <div class="modal-footer">
+                     <a class="btn btn-default" data-dismiss="modal">Close</a>
+                     <a class="btn btn-primary" data-dismiss="modal">Learn to fly</a>
+                 </div>
+             </div>
+         </div>
+     </div>
+
+    <!-- The Modal for Register clicking -->
+    <div class="modal fade" id="register" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form class="form-horizontal">
+                    <div class="modal-header">
+                        <h4>Register for MedAssist</h4>
+                    </div>
+                    <div class="modal-body">
+
+                        <div class="form-group">
+
+                            <label for="contact-name" class="col-lg-2 control-label">Name:</label>
+                            <div class="col-lg-10">
+
+                                <input type="text" class="form-control" id="contact-name" placeholder="Full Name">
+
+                            </div>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="contact-email" class="col-lg-2 control-label">Email:</label>
+                            <div class="col-lg-10">
+
+                                <input type="email" class="form-control" id="contact-email" placeholder="you@example.com">
+
+                            </div>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="Full Name" class="col-lg-2 control-label">Name:</label>
+                            <div class="col-lg-10">
+
+                                <input type="text" class="form-control" id="user-name" placeholder="John Doe">
+
+                            </div>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="user-phone" class="col-lg-2 control-label">Phone:</label>
+                            <div class="col-lg-10">
+
+                                <input type="tel" class="form-control" id="user-phone" placeholder="888-888-8888">
+
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+                    <div class="modal-footer">
+                        <a class="btn btn-default" data-dismiss="modal">Close</a>
+                        <button class="btn btn-primary" type="submit">Register</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="login" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form class="form-horizontal">
+                    <div class="modal-header">
+                        <h4>Login</h4>
+                    </div>
+                    <div class="modal-body">
+
+                        <div class="form-group">
+
+                            <label for="User-name" class="col-lg-2 control-label">Login:</label>
+                            <div class="col-lg-10">
+
+                                <input type="text" class="form-control" id="contact-name" placeholder="Your User Name">
+
+                            </div>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="user-password" class="col-lg-2 control-label">Password:</label>
+                            <div class="col-lg-10">
+
+                                <input type="password" class="form-control" id="user-password" placeholder="">
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <div class="modal-footer">
+                        <a class="btn btn-default" data-dismiss="modal">Close</a>
+                        <button class="btn btn-primary" type="submit">Login</button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
