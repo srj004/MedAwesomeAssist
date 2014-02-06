@@ -1,4 +1,8 @@
-﻿.page-header{
+﻿body{
+    margin-bottom: 80px;
+}
+
+.page-header{
     margin-top: 0;
 
 }

@@ -11,7 +11,7 @@
     <div class="navbar navbar-inverse navbar-static-top">
         <div class="container">
 
-            <a href="#" class="navbar-brand">MedAssist</a>
+            <a href="index.html" class="navbar-brand">MedAssist</a>
 
             <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
                 <span class="icon-bar"></span>
@@ -23,16 +23,16 @@
 
                 <ul class="nav navbar-nav navbar-right">
 
-                    <li class="active"><a href="HomePage.html">Home</a></li>
-                    <li><a href="#">Speak with a Doctor</a></li>
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="speakwith.html">Speak with a Doctor</a></li>
                     <li class="dropdown">
 
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Navigation <b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Medical Records</a></li>
-                            <li><a href="#">Alerts</a></li>
-                            <li><a href="#">Find a Doctor</a></li>
-                            <li><a href="#">Medical History</a></li>
+                            <li><a href="MedicalRecords.html">Medical Records</a></li>
+                            <li><a href="Alerts.html">Alerts</a></li>
+                            <li><a href="FindADoctor.html">Find a Doctor</a></li>
+                            <li><a href="MedicalHistory.html">Medical History</a></li>
                         </ul>
 
                     </li>
@@ -64,6 +64,20 @@
         </div>
     </center>
 
+    <!-- Body Below JumboTron Centered-->
+    <center>
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <h2>
+                    I am unsure how i want to fill the space down here, any ideas?
+                </h2>
+                <img class="featureImg" src="img/Grim.jpg" width="100%">
+            </div>
+
+
+        </div>
+    </center>
+
 
     <!-- This is the foot toobar-->
 
@@ -71,30 +85,102 @@
 
         <div class="container">
             <p class="navbar-text pull-left">Site Built By Team Better Than Yours</p>
-            <a href="http://youtube.com/codersguide" class="navbar-btn btn-danger btn pull-right">Alert Your Doctor</a>
+            <a href="#alert" data-toggle="modal" class="navbar-btn btn-danger btn pull-right">Alert Your Doctor</a>
         </div>
 
     </div>
 
+    <!-- This is the modal for Alter your Doctor-->
+    <div class="modal fade" id="alert" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form class="form-horizontal">
+                    <div class="modal-header">
+                        <h4>Altert your Doctor</h4>
+                    </div>
+                    <div class="modal-body">
+
+                        <div class="form-group">
+
+                            <label for="Full Name" class="col-lg-2 control-label">Name:</label>
+                            <div class="col-lg-10">
+
+                                <input type="text" class="form-control" id="user-name" placeholder="John Doe">
+
+                            </div>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="contact-email" class="col-lg-2 control-label">Email:</label>
+                            <div class="col-lg-10">
+
+                                <input type="email" class="form-control" id="contact-email" placeholder="you@example.com">
+
+                            </div>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="Full Name" class="col-lg-2 control-label">Doctor Name:</label>
+                            <div class="col-lg-10">
+
+                                <input type="text" class="form-control" id="user-name" placeholder="Dr. John Doe">
+
+                            </div>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="contact-email" class="col-lg-2 control-label">Doctors Email:</label>
+                            <div class="col-lg-10">
+
+                                <input type="email" class="form-control" id="contact-email" placeholder="Dr.@example.com">
+
+                            </div>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="contact-name" class="col-lg-2 control-label">Message</label>
+                            <div class="col-lg-10">
+
+                                <textarea class="form-control" rows="20" id="doctor-message" placeholder="Message for your do Here"></textarea>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+            </div>
+        </div>
+    </div>
+
+
     <!-- The response from clicking contact -->
-     <div class=" modal fade" id="contact" role="dialog">
-         <div class="modal-dialog">
-             <div class="modal-content">
-                 <div class="modal-header">
-                     <h4>Contact MedAssist</h4>
-                 </div>
-                 <div class="modal-body">
-                     <p> Tech Support: Sahil:</p><br />
-                     <p> Complaints: Bernardo:</p><br />
-                     <p> Compliments: Matt</p>
-                 </div>
-                 <div class="modal-footer">
-                     <a class="btn btn-default" data-dismiss="modal">Close</a>
-                     <a class="btn btn-primary" data-dismiss="modal">Learn to fly</a>
-                 </div>
-             </div>
-         </div>
-     </div>
+    <div class=" modal fade" id="contact" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4>Contact MedAssist</h4>
+                </div>
+                <div class="modal-body">
+                    <p> Tech Support: Sahil:</p><br />
+                    <p> Complaints: Bernardo:</p><br />
+                    <p> Compliments: Matt</p>
+                </div>
+                <div class="modal-footer">
+                    <a class="btn btn-default" data-dismiss="modal">Close</a>
+                    <a class="btn btn-primary" data-dismiss="modal">Learn to fly</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- The Modal for Register clicking -->
     <div class="modal fade" id="register" role="dialog">
